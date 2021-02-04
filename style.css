@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header #navMenu a,
+header #navMenu p,
+header #contact a,
+header #contact p {
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  position: relative;
+  margin: 0.5rem;
+}
+
+header #logo {
+  background: url(./asset/RallyTrade.svg);
+  height: 50px;
+  width: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+header #navMenu {
+  margin: 1rem 0;
+}
+
+header #contact {
+  margin: 1rem 0;
+}
+
+header #contact p {
+  display: inline-block;
+  margin: 0;
+}
+
+.addBefore::before {
+  content: '';
+  height: 80%;
+  width: 2px;
+  background: #000;
+  position: absolute;
+  left: -15%;
+  top: 10%;
+}
+
+#content #form_tags {
+  position: relative;
+}
+
+#content #form_tags .bgImg {
+  height: 325px;
+  width: 100%;
+  background: url(./asset/bram-naus-oqnVnI5ixHg-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#content #form_tags form {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  padding: 0 0 2rem 1rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background: white;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: 0 1px 0 #00000050;
+          box-shadow: 0 1px 0 #00000050;
+}
+
+#content #form_tags form::before {
+  content: 'SignUp with RallyTrade in few minutes';
+  position: absolute;
+  top: -7%;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#content #form_tags form .login_signUp_btn {
+  background: grey;
+  border-top-right-radius: 1.5rem;
+  border-top-left-radius: 1.5rem;
+}
+
+#content #form_tags form .login_signUp_btn #register,
+#content #form_tags form .login_signUp_btn #login {
+  border: none;
+  padding: 0.5rem 2rem;
+  border-top-right-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  font-weight: bold;
+  background: violet;
+  outline: none;
+  border: none;
+}
+
+#content #form_tags form .login_signUp_btn #register {
+  background: white;
+  border-top-left-radius: 1.5rem;
+}
+
+#content #form_tags form .login_signUp_btn #login {
+  background: grey;
+}
+
+#content #form_tags form input {
+  margin-right: 2rem;
+  display: block;
+  border: none;
+  border-bottom: 1px solid black;
+  background: white;
+  outline: none;
+  color: black;
+  padding: 1rem 0 0.25rem 0.25rem;
+  width: 80%;
+}
+
+#content #form_tags form input::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  opacity: 1;
+  /* Firefox */
+}
+
+#content #form_tags form input:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  opacity: 1;
+  /* Firefox */
+}
+
+#content #form_tags form input::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  opacity: 1;
+  /* Firefox */
+}
+
+#content #form_tags form input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  opacity: 1;
+  /* Firefox */
+}
+
+#content #form_tags form .terms_conditions {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#content #form_tags form .terms_conditions #T_C {
+  display: inline-block;
+  margin-right: 0.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#content #form_tags form .terms_conditions #labelTC {
+  display: inline-block;
+  width: 300px;
+  color: black;
+  font-size: 10px;
+  margin-right: 1rem;
+}
+
+#content #form_tags form .radio_btns {
+  margin-top: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+#content #form_tags form .radio_btns #demo,
+#content #form_tags form .radio_btns #real,
+#content #form_tags form .radio_btns #USD,
+#content #form_tags form .radio_btns #NGN {
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+#content #form_tags form .radio_btns label {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+#content #form_tags form .radio_btns .acct_type,
+#content #form_tags form .radio_btns .acct_currency {
+  display: inline-block;
+}
+
+#content #form_tags form #open_account {
+  padding: 0.5rem 1rem;
+  background: #0b8a0b;
+  color: white;
+  border: none;
+  outline: none;
+  display: block;
+  margin: 1rem 30% 0 30%;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.tags .tags_img {
+  height: 100px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: inline-block;
+  margin-right: 2.5rem;
+}
+
+.tags .tags_img .img {
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
+}
+
+.tags .tags_img .text {
+  font-size: 10px;
+  font-weight: 900;
+}
+
+.tags .regulated .img {
+  background: url(./asset/icon-usp-secure.svg);
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tags .award .img {
+  background: url(./asset/svgexport-2.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tags .leverage .img {
+  background: url(./asset/svgexport-3.svg);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tags .seminars .img {
+  background: url(./asset/svgexport-4.svg);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tags .advanced .img {
+  background: url(./asset/svgexport-5.svg);
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tags .instruments .img {
+  background: url(./asset/svgexport-6.svg);
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#details {
+  background: rgba(128, 128, 128, 0.301);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 100%;
+  padding: 1rem 5rem 1rem 10rem;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+#details .plans p,
+#details .addresses p {
+  margin-top: 0.5rem;
+  font-size: 14px;
+}
+
+#details .plans {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: relative;
+}
+
+#details .plans::after {
+  position: absolute;
+  right: -75%;
+  top: 10%;
+  content: '';
+  width: 1px;
+  height: 80%;
+  background: #000;
+}
+
+#details .addresses {
+  text-align: right;
+  margin-left: 40%;
+}
+
+#details .addresses h4,
+#details .addresses p {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+}
+
+footer h3 {
+  margin: 0.5rem 0;
+  color: #eb4c4c;
+}
+
+footer p {
+  font-size: 12px;
+  max-width: 60%;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+footer .warning {
+  margin-top: 1rem;
+}
+
+footer .copyright {
+  margin: 0.5rem auto;
+}
+/*# sourceMappingURL=style.css.map */
